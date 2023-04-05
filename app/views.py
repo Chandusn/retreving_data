@@ -10,3 +10,8 @@ def display_webpage(request):
     LOW=WebPage.objects.all()
     d={'webpage':LOW}
     return render(request,'display_webpage.html',d)
+
+def display_access(request):
+    LOA=AccessRecord.objects.all()
+    d={'access':LOA}
+    return render(request,'display_access.html',d)
